@@ -1,0 +1,11 @@
+.header__list-lang {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0 0 0 16px;
+  align-self: flex-end;
+}
+
+
+
+

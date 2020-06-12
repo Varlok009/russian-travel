@@ -1,22 +1,28 @@
 @import url(./__lang-button/header__lang-button.css);
+@import url(./__list-lang/header__list-lang.css);
+@import url(./__list-item/header__list-item.css);
+@import url(./__logo/header__logo.css);
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr max-content max-content;
-  grid-gap: 18px;
+  display: flex;
   justify-content: space-between;
-  width: calc(100% - 96px);
-  max-width: 1184px;
+  align-items: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 28px 48px 0;
+  
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
-    width: calc(100% - 48px);
+    padding: 28px 24px 0;  
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .header {
-    width: calc(100% - 32px);
+    padding: 16px 16px 0;
   }
 }
