@@ -1,0 +1,19 @@
+@import url(./__copyright/footer__copyright.css);
+
+.footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+  grid-gap: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    grid-template-columns: min-content;
+    grid-gap: 48px;
+  }
+}
+

@@ -1,0 +1,20 @@
+.cover__text {
+  position: absolute;
+  left: 0;
+  top: calc((100% - 245px)/2);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .cover__text {
+    top: calc((100% - 150px)/2);
+    font-size: 32px;
+    line-height: 1.1;
+     
+  }
+}
+
