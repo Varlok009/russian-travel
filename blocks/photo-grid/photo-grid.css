@@ -3,12 +3,10 @@
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
   grid-gap: 16px; 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 48px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -22,14 +20,12 @@
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px; 
-    padding: 0 24px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 425px) {
   .photo-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 12px; 
-    padding: 0 16px;
+    grid-gap: 12px;
   }
 }

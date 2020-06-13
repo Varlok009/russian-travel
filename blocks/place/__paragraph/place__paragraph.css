@@ -1,7 +1,7 @@
 .place__paragraph {
   margin: 24px 0 0 0;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .place__paragraph:nth-of-type(1) {
@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 425px) {
   .place__paragraph {
     padding: 0 16px; 
   }

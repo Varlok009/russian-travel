@@ -4,22 +4,18 @@
 @import url(./__title/intro__title.css);
 
 .intro {
-  align-self: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  max-width: 984px;
-  min-width: 320px;
-  
+  max-width: 690px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .intro {
-    padding: 0 24px;
+    max-width: 100%;
   }
 }
 

@@ -8,5 +8,10 @@
   text-decoration: none;
   color: #FFFFFF;
   background: #2A2C2F;
+ 
 }
 
+.cover:hover .cover__img {
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}

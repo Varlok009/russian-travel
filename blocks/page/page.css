@@ -1,4 +1,5 @@
 @import url(./__content/page__content.css);
+@import url(./__main-content/page__main-content.css);
 @import url(./__travel-way/page__travel-way.css);
 @import url(./__intro/page__intro.css);
 @import url(./__photo-grid/page__photo-grid.css);
@@ -8,14 +9,14 @@
 
 
 @font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     src: url(../../vendor/font/inter/Inter-Regular.woff2) format("woff2");
     font-style: normal; 
     font-weight: normal; 
 }
 
 @font-face {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     src: url(../../vendor/font/inter/Inter-Black.woff2) format("woff2");
     font-style: normal; 
     font-weight: bold; 
@@ -26,5 +27,7 @@
   color: #ffffff;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
