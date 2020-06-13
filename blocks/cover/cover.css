@@ -4,14 +4,33 @@
 @import url(./__title/cover__title.css);
 
 .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 100%;
   position: relative;
+  z-index: 0;
+  overflow: hidden;
+  color: #ffffff;
   text-decoration: none;
-  color: #FFFFFF;
-  background: #2A2C2F;
- 
+  padding: 19.3% 0;
 }
 
 .cover:hover .cover__img {
   opacity: 0.2;
   transition: opacity 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    padding: 19.28% 0;  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    padding: 15.29% 0;  
+  }
 }

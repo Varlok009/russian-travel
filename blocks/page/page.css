@@ -7,21 +7,6 @@
 @import url(./__cover/page__cover.css);
 @import url(./__footer/page__footer.css);
 
-
-@font-face {
-    font-family: 'Inter', Arial, sans-serif;
-    src: url(../../vendor/font/inter/Inter-Regular.woff2) format("woff2");
-    font-style: normal; 
-    font-weight: normal; 
-}
-
-@font-face {
-    font-family: 'Inter', Arial, sans-serif;
-    src: url(../../vendor/font/inter/Inter-Black.woff2) format("woff2");
-    font-style: normal; 
-    font-weight: bold; 
-}
-
 .page {
   background-color: #2A2C2F;
   color: #ffffff;
