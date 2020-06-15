@@ -8,10 +8,6 @@
 </head>
 <body>
 
-    <!-- Рискну предположить, что в fonts не правильно прописал шрифты, но что первый раз, что сейчас у меня на всех
-    устройствах отображается корректный шрифт (ноутбуки/телефон/планшет), не понял почему так получается,
-    но надеюсь что больше негде ошибиться в подключении шрифтов :) -->
-
     <div class="page">
       <div class="page__content">
 
@@ -19,22 +15,32 @@
           <img src="./images/header-logo.svg" alt="Россия" class="header__logo">
           <ul class="header__list-lang">
             <li class="header__list-item">
-              <button class="header__lang-button header__lang-button_active">Ru</button>
+              <button type="button" class="header__lang-button header__lang-button_active">Ru</button>
             </li>
             <li class="header__list-item">
-              <button class="header__lang-button">En</button>
+              <button type="button" class="header__lang-button">En</button>
             </li>            
           </ul>          
         </header>
 
         <main class="page__main-content">  
         
+          <!-- извиняюсь за стену текста, но так я частично представляют диалог, а в диалоге проще искать истину :)
+            Здесь как и в гридах, действительно воспользовался готовым архивом от яндекса,
+          который предлогался в описании, по этому думал: "ну наверно так оптимизировали",
+          теперь лучше буду пологаться на себя:)
+          пс. ну и конечно приятно, когда поменял картинку, а больше ничего переписывать в коде и не нужно, все осталось красиво
+          псс. за факапы с текстом даже стыдно, издалека (50% масштаба) просто не заметил что есть различия =/
+          псс. не знаю можно ли просить помощи, но если можно: не подскажите как изменить стиль подчеркивания текста?
+          например в place подчеркивание ссылок отличается от тсандартного свойства (по пересечению с символами),
+          я смог найти только какие-то совсем страшные костыли или js (надеюсь это не пропущенное замечание :D)
+          -->
           <section class="travel-way page__travel-way">
             <h1 class="travel-way__title">Путешествия по России</h1>
             <p class="travel-way__subtitle">Настоящая страна не в выпусках
                                             новостей, а здесь.</p>
             <img src="./images/lead-polka.jpg" alt="Карта Путешествия" class="travel-way__cover">
-            <p class="travel-way__img-annotation">Ваша полка - верхняя</p>
+            <p class="travel-way__img-annotation">ваша полка — верхняя</p>
           </section>
 
           <section class="intro page__intro">
@@ -47,12 +53,13 @@
               которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров
               по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
             </p>
+
             <ul class="intro__list-facts">
-              <li class="intro__list-item">Часовых поясов 11</li>
-              <li class="intro__list-item">Объектов природного наследия ЮНЕСКО 12</li>
-              <li class="intro__list-item">Объектов культурного наследия ЮНЕСКО 16</li>
-              <li class="intro__list-item">Природных заповедников 105</li>
-              <li class="intro__list-item">Аэропортов 241</li>
+              <li class="intro__list-item">Часовых поясов <span class="intro__facts-nunber">11</span></li>
+              <li class="intro__list-item">Объектов природного наследия ЮНЕСКО <span class="intro__facts-nunber">12</span></li>
+              <li class="intro__list-item">Объектов культурного наследия ЮНЕСКО <span class="intro__facts-nunber">16</span></li>
+              <li class="intro__list-item">Природных заповедников <span class="intro__facts-nunber">105</span></li>
+              <li class="intro__list-item">Аэропортов <span class="intro__facts-nunber">241</span></li>
             </ul>
           </section>
 
@@ -75,8 +82,8 @@
             <article class="place">
               <h3 class="place__title">Куршская коса</h3>
               <div class="place__site">
-                <p class="place__url-head">URL</p>
-                <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
+                <p class="place__url-head">url</p>
+                <a target="_blank" href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
               </div>
               <img src="./images/place-kosa.jpg" alt="Куршская коса" class="place__img">
               <div class="place__paragraphs">
@@ -96,7 +103,7 @@
               <h3 class="place__title">Кольский</h3>
               <div class="place__site">
                 <p class="place__url-head">URL</p>
-                <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
+                <a target="_blank" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
               </div>
               <img src="./images/place-kolsky.jpg" alt="Кольский" class="place__img">
               <div class="place__paragraphs">
@@ -116,7 +123,7 @@
               <h3 class="place__title">Алтай</h3>
               <div class="place__site">
                 <p class="place__url-head">URL</p>
-                <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link">National Geographic</a>
+                <a target="_blank" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link">National Geographic</a>
               </div>
               <img src="./images/place-altai.jpg" alt="Алтай" class="place__img">
               <div class="place__paragraphs">
@@ -135,7 +142,7 @@
               <h3 class="place__title">Зимний Байкал</h3>
               <div class="place__site">
                 <p class="place__url-head">URL</p>
-                <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
+                <a target="_blank" href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
               </div>
               <img src="./images/place-winter-baikal.jpg" alt="Зимний Байкал" class="place__img">
               <div class="place__paragraphs">
@@ -153,7 +160,7 @@
               <h3 class="place__title">Карелия</h3>
               <div class="place__site">
                 <p class="place__url-head">URL</p>
-                <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
+                <a target="_blank" href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
               </div>
               <img src="./images/place-karelia.jpg" alt="Карелия" class="place__img">
               <div class="place__paragraphs">
@@ -169,14 +176,12 @@
             </article>
           </section>
 
-          <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover page__cover">
+        <a target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover page__cover">
             <img src="./images/cover-trains.jpg" alt="Поезда" class="cover__img">
-            <div class="cover__text">
-              <h2 class="cover__title">До Байкала «на собаках»</h2>
-              <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes —
-                путешествие от столицы до Байкала на электричках.
-              </p>
-            </div>
+            <h2 class="cover__title">До Байкала «на собаках»</h2>
+            <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes —
+              путешествие от столицы до Байкала на электричках.
+            </p>            
           </a>
           
         </main>

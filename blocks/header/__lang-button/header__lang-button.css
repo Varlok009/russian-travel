@@ -8,9 +8,13 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
 }
 
-
+.header__lang-button:hover {
+  opacity: 0.8;  
+}
 
 @media (max-width: 425px) {
   .header__lang-button {

@@ -1,7 +1,7 @@
 @import url(./__list-facts/intro__list-facts.css);
-@import url(./__list-item/intro__list-item.css);
 @import url(./__text/intro__text.css);
 @import url(./__title/intro__title.css);
+@import url(./__facts-nunber/intro__facts-nunber.css);
 
 .intro {
   -webkit-box-sizing: border-box;
